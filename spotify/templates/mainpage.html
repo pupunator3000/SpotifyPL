@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>SpotifyRelease</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<body>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  {% load static %}
+  <link href='{% static "sporel.css" %}' rel="stylesheet">
+  <nav class="navbar navbar-expand navbar-dark fixed-top">
+    <div class="navbar-brand-img">
+      <img src="static/images/spotify.svg"  width="35" height="35" alt="" style="padding-bottom: .25rem">
+      <a class="navbar-brand">SpotifyRelease</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/features">Features</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<header class="masthead mb-auto">
+  <div class="inner">
+  </div>
+</header>
+
+<main role="main" class="inner cover">
+  <h1 class="cover-heading">Welcome to SpotifyRelease.</h1>
+  <p class="lead">SpotifyRelease helps you search for your favorite artists new releases</p>
+  <p class="lead">
+    <a href="{% url 'redirect' %}" class="btn btn-lg btn-secondary">Start</a>
+  </p>
+</main>
+
+<footer class="mastfoot mt-auto">
+  <div class="inner">
+    <p>Pipipupu</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
